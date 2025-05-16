@@ -5725,8 +5725,6 @@ void lispif_process_rmsg(int slot, unsigned char *data, unsigned int len) {
 		} else {
 			lbm_free(v.buf);
 		}
-
-		rmsg_slots[slot].cid = -1;
 	}
 
 	chMtxUnlock(&rmsg_mutex);
